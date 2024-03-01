@@ -12,8 +12,8 @@ function displaySongInfo() {
     var fullLink = "https://www.youtube.com/embed/" + songLink;
 
     document.getElementById("songVideo").innerHTML = '<iframe width="560" height="315" src="' + fullLink + '" frameborder="1" allowfullscreen></iframe>';
+    
     document.getElementById("songInfo").style.display = "none";
-
     document.getElementById("displayArea").style.display = "block";
 }
 module.exports = {
