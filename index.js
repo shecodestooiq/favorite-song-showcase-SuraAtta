@@ -1,18 +1,18 @@
 function displaySongInfo() {
     event.preventDefault();
-    var songName = document.getElementById("songName").value;
-    var songLink = document.getElementById("songLink").value;
-    var description = document.getElementById("description").value;
-    var year = document.getElementById("year").value;
+    
+    let songName = document.getElementById("songName").value;
+    let songLink = document.getElementById("songLink").value;
+    let description = document.getElementById("description").value;
+    let year = document.getElementById("year").value;
     
     document.getElementById("displaySongName").innerHTML = songName;
     document.getElementById("displayDescription").innerHTML = description;
     document.getElementById("displayYear").innerHTML ="I first listend to this song in " + year;
 
-    var fullLink = "https://www.youtube.com/embed/" + songLink;
-
+    let fullLink = "https://www.youtube.com/embed/" + songLink;
     document.getElementById("songVideo").innerHTML = '<iframe width="560" height="315" src="' + fullLink + '" frameborder="1" allowfullscreen></iframe>';
-    
+
     document.getElementById("songInfo").style.display = "none";
     document.getElementById("displayArea").style.display = "block";
 }
